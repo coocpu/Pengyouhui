@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+
+    <EditText
+        android:id="@+id/et_user_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_below="@+id/civ_head"
+        android:layout_marginLeft="@dimen/dimen_common_30"
+        android:layout_marginRight="@dimen/dimen_common_30"
+        android:layout_marginTop="@dimen/dimen_common_50"
+        android:background="@drawable/bg_shape_5_solid_white_alpha_2"
+        android:drawableLeft="@mipmap/icon_et_pwd"
+        android:drawablePadding="@dimen/dimen_common_10"
+        android:gravity="center_vertical"
+        android:inputType="textPassword"
+        android:textSize="@dimen/dimen_common_font_14"
+        android:hint="@string/str_reset_oldpassword_notify"
+        android:paddingLeft="@dimen/dimen_common_20"
+        android:textColorHint="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/et_new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_below="@+id/civ_head"
+        android:layout_marginLeft="@dimen/dimen_common_30"
+        android:layout_marginRight="@dimen/dimen_common_30"
+        android:layout_marginTop="@dimen/dimen_common_15"
+        android:background="@drawable/bg_shape_5_solid_white_alpha_2"
+        android:drawableLeft="@mipmap/icon_et_pwd"
+        android:drawablePadding="@dimen/dimen_common_10"
+        android:gravity="center_vertical"
+        android:inputType="textPassword"
+        android:hint="@string/str_reset_password_notify"
+        android:textSize="@dimen/dimen_common_font_14"
+        android:paddingLeft="@dimen/dimen_common_20"
+        android:textColorHint="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/et_again_new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_below="@+id/civ_head"
+        android:layout_marginLeft="@dimen/dimen_common_30"
+        android:layout_marginRight="@dimen/dimen_common_30"
+        android:layout_marginTop="@dimen/dimen_common_15"
+        android:background="@drawable/bg_shape_5_solid_white_alpha_2"
+        android:drawableLeft="@mipmap/icon_et_pwd"
+        android:drawablePadding="@dimen/dimen_common_10"
+        android:gravity="center_vertical"
+        android:inputType="textPassword"
+        android:hint="@string/str_reset_password_notify"
+        android:paddingLeft="@dimen/dimen_common_20"
+        android:textSize="@dimen/dimen_common_font_14"
+        android:textColorHint="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_below="@+id/civ_head"
+        android:layout_marginLeft="@dimen/dimen_common_30"
+        android:layout_marginRight="@dimen/dimen_common_30"
+        android:layout_marginTop="@dimen/dimen_common_30"
+        android:background="@drawable/bg_shape_20_solid"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_common_20"
+        android:text="@string/str_base_ok"
+        android:textSize="@dimen/dimen_common_font_16"
+        android:textColor="@color/color_font_login"/>
+</LinearLayout>

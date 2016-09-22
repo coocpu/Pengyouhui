@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <!--窗口背景颜色-->
+    <color name="bgColor_alertview_alert">#f8f8f8</color>
+    <color name="bgColor_alertview_alert_start">#f0f0f0</color>
+    <!--标题颜色-->
+    <color name="textColor_alert_title">#000000</color>
+    <color name="textColor_actionsheet_title">#8f8f8f</color>
+    <!--消息颜色-->
+    <color name="textColor_alert_msg">#000000</color>
+    <color name="textColor_actionsheet_msg">#8f8f8f</color>
+    <!--线条颜色-->
+    <color name="bgColor_divier">#d7d7db</color>
+    <!--取消按钮颜色-->
+    <color name="textColor_alert_button_cancel">#007aff</color>
+    <!--高亮按钮颜色-->
+    <color name="textColor_alert_button_destructive">#ff3b30</color>
+    <!--普通按钮文字颜色-->
+    <color name="textColor_alert_button_others">#007aff</color>
+    <!--点击颜色-->
+    <color name="bgColor_alert_button_press">#EAEAEA</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_base_divider">#dddddd</color>
+
+    <color name="color_common_divider">#cccccc</color>
+
+    <color name="color_common_gray">#E8E7E4</color>
+
+    <color name="color_common_bg">#f1f1f1</color>
+
+    <color name="color_common_bar_base">#cdc7c9</color>
+
+    <color name="color_common_pyh">@color/color_common_bar_base</color>
+
+    <!--首页-->
+    <color name="color_common_white_alpha_0">#00FFFFFF</color>//不透明度0%
+    <color name="color_common_white_alpha_0.1">#19FFFFFF</color>//不透明度10%
+    <color name="color_common_white_alpha_0.2">#33FFFFFF</color>//不透明度20%
+    <color name="color_common_white_alpha_0.4">#66FFFFFF</color>//不透明度40%
+    <color name="color_common_white_alpha_0.6">#99FFFFFF</color>//不透明度60%
+    <color name="color_common_white_alpha_0.5">#7FFFFFFF</color>//不透明度50%
+    <color name="color_common_white_alpha_0.7">#b2FFFFFF</color>//不透明度70%
+    <color name="color_common_white_alpha_0.8">#ccFFFFFF</color>//不透明度80%
+    <color name="color_common_white_alpha_0.9">#e5FFFFFF</color>//不透明度90%
+    <color name="color_common_menuview_alpha_0.9">#e5cfcac9</color>//不透明度90%
+    <color name="color_common_white_alpha_1">#ffffffff</color>//不透明度100%
+    <color name="color_main_font">#444444</color>
+    <color name="color_mine_line_num">#4cc4c0bf</color>//不透明度30%
+
+    <color name="color_font_common_1">#c2ac9f</color>
+    <color name="color_font_login">#e3c3ae</color>//登陆注册确认修改字体颜色
+    <color name="color_common_red">#f76c73</color>
+    //亲情账户
+    <color name="color_font_accout_recharge">#4c4948</color>
+    <color name="color_font_accout_other_recharge">#f58093</color>
+    <color name="color_font_wallet_operation">#8d8d8d</color>
+
+    <color name="color_font_login_preessed">#f5a7ad</color>
+    <color name="color_font_login_unpreessed">#f58093</color>
+
+    <color name="color_font_comment_common">#666666</color>
+
+    <color name="color_tabhost_order_common">#c0bab8</color>
+    <color name="color_font_3b3b3b">#3b3b3b</color>
+
+
+    <!--扫一扫-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+</resources>

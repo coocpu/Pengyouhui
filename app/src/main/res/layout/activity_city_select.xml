@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include"
+        android:background="#dfdfdf">
+
+        <EditText
+            android:id="@+id/sh"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_common_40"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dimen_common_10"
+            android:layout_marginLeft="@dimen/dimen_common_15"
+            android:layout_marginRight="@dimen/dimen_common_15"
+            android:layout_marginTop="@dimen/dimen_common_10"
+            android:background="@drawable/bg_city_search"
+            android:drawableLeft="@mipmap/icon_search"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="城市/行政区/拼音"
+            android:paddingBottom="@dimen/dimen_common_5"
+            android:paddingLeft="@dimen/dimen_common_10"
+            android:paddingTop="@dimen/dimen_common_5"
+            android:textColor="#515151"
+            android:textSize="16dp">
+        </EditText>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_1"
+        android:layout_marginTop="7dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"/>
+
+    <ListView
+        android:id="@+id/search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_1"
+        android:layout_marginTop="7dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_noresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="抱歉,暂时没有找到相关城市"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <com.enrich.pengyouhui.activitys.city.MyLetterListView
+        android:id="@+id/MyLetterListView01"
+        android:layout_width="@dimen/dimen_common_40"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rl_1"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="7dp"/>
+
+</RelativeLayout>

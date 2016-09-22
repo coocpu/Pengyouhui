@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="false"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/maincontent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_0"
+        android:layout_weight="1">
+    </FrameLayout>
+    <!--<FrameLayout-->
+    <!--android:id="@+id/maincontent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--</FrameLayout>-->
+
+    <ImageView
+        android:id="@+id/id_tip"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/update_detail_up"/>
+
+    <com.enrich.pengyouhui.support.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="@dimen/dimen_common_0"
+            android:layout_height="@dimen/dimen_common_0"
+            android:layout_weight="0"
+            android:background="#fff">
+        </FrameLayout>
+    </com.enrich.pengyouhui.support.FragmentTabHost>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/transparent"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/id_tip"
+        android:layout_width="@dimen/dimen_common_60"
+        android:layout_height="@dimen/dimen_common_32"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_common_menuview_alpha_0.9"
+        android:scaleType="center"
+        android:src="@mipmap/icon_up"/>
+
+    <LinearLayout
+        android:id="@+id/id_layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_common_menuview_alpha_0.9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_menu_0"
+            android:layout_width="@dimen/dimen_common_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/icon_main"
+            android:gravity="center"
+            android:padding="@dimen/dimen_common_10"
+            android:text="@string/array_main_tabs_home"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_menu_1"
+            android:layout_width="@dimen/dimen_common_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/icon_commonuse"
+            android:gravity="center"
+            android:padding="@dimen/dimen_common_10"
+            android:text="@string/array_main_tabs_use"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_menu_2"
+            android:layout_width="@dimen/dimen_common_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/icon_ticket"
+            android:gravity="center"
+            android:padding="@dimen/dimen_common_10"
+            android:text="@string/array_main_tabs_ticket"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_menu_3"
+            android:layout_width="@dimen/dimen_common_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/icon_mine"
+            android:gravity="center"
+            android:padding="@dimen/dimen_common_10"
+            android:text="@string/array_main_tabs_me"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">鹏友会</string>
+
+    <string name="str_base_network_no">暂无网络</string>
+
+    <string name="str_shop_detail">商品详情</string>
+    <string name="array_main_tabs_home">首页</string>
+    <string name="array_main_tabs_use">常用</string>
+    <string name="array_main_tabs_ticket">券</string>
+    <string name="array_main_tabs_me">我的</string>
+    <string name="str_base_ok">确定</string>
+    <string name="str_commonwebview_url_err">网页地址异常，请退出或反馈！</string>
+    <string name="str_base_notify">提示</string>
+
+    <string name="str_login">登录</string>
+    <string name="str_login_hint_mobile">请输入手机号码</string>
+    <string name="str_hint_affirm_mobile">请确认手机号码</string>
+    <string name="str_hint_recharge_amount">请输入充值金额</string>
+    <string name="str_login_hint_pwd">请输入密码</string>
+    <string name="str_login_forget_pwd">忘记密码？</string>
+    <string name="str_login_forget_pwd_1">忘记密码</string>
+    <string name="str_register_repwd">请确认密码</string>
+    <string name="str_input_verification_code">请输入验证码</string>
+    <string name="str_register">注册</string>
+    <string name="str_third_login_sina">新浪</string>
+    <string name="str_third_login_weixin">微信</string>
+    <string name="str_third_login_qq">QQ</string>
+    <string name="str_third_login_haihang">海航登陆</string>
+    <!--<string name="str_third_login">─────────────第三方登录─────────────</string>-->
+    <string name="str_third_login">第三方登录</string>
+    <string name="str_get_verification_code">获取验证码</string>
+    <string name="str_login_success">登录成功</string>
+    <string name="str_login_failed">登录失败</string>
+    <string name="str_login_failed_notify">登录失败，请重试</string>
+    <string name="str_login_failed_err_unknow">登录状态异常</string>
+    <string name="str_login_infoisnull_notify">账号或密码不能为空</string>
+    <string name="str_login_disresetable">当前登录账号没有修改密码权限</string>
+
+    <string name="str_reset_title">修改密码</string>
+    <string name="str_reset_oldpassword_notify">请输入当前登录密码</string>
+    <string name="str_reset_password_notify">请输入新密码</string>
+    <string name="str_reset_password_2_notify">请再次输入新密码</string>
+    <string name="str_reset_password_failed">密码修改失败</string>
+    <string name="str_reset_password_success">密码修改成功</string>
+
+    <string name="str_register_submit">立即注册</string>
+    <string name="str_register_getcode_success">验证码发送成功</string>
+    <string name="str_register_getcode_failed">验证码发送失败</string>
+    <string name="str_register_code_hint">输入验证码</string>
+    <string name="str_register_phone_err">请正确输入11位手机号码</string>
+    <string name="str_register_imgcode_null">请输入图片验证码</string>
+    <string name="str_resister_failed_notify">注册失败，请稍后重试</string>
+
+
+    <string name="str_frogetpassword_title">找回密码</string>
+    <string name="str_frogetpassword_submit">确认修改</string>
+    <string name="str_forgetpassword_phone_null">请输入手机号</string>
+    <string name="str_forgetpassword_pass_null">密码不能为空</string>
+    <string name="str_forgetpassword_pass_length_lg6">请输入6位数密码</string>
+    <string name="str_forgetpassword_pass_ununite">两次输入密码不一致</string>
+
+    <!--设置-->
+    <string name="str_modify_personal_information">修改个人信息</string>
+    <string name="str_version_update">版本更新</string>
+    <string name="str_current_version">当前版本%s</string>
+    <string name="str_change_password">修改密码</string>
+    <string name="str_about_me">关于我们</string>
+    <string name="str_empty_history_data">清空历史数据</string>
+    <string name="str_login_out">退出当前账户</string>
+
+    <!--我的-->
+    <string name="str_mine_myorder">我的订单</string>
+    <string name="str_mine_account">亲情账户</string>
+    <string name="str_mine_coupon">券</string>
+    <string name="str_mine_coupon_1">优惠券</string>
+    <string name="str_mine_invoice">发票</string>
+    <string name="str_mine_collect">我的收藏</string>
+    <string name="str_mine_setting">设置</string>
+    <string name="str_common_collect">收藏</string>
+    <string name="str_mine_no_payment">待支付</string>
+    <string name="str_recharge">充值</string>
+
+    <!--优惠券-->
+    <string name="str_coupon_yetget">已领取</string>
+    <string name="str_coupon_yetuse">已使用</string>
+    <string name="str_coupon_yetpastdue">已过期</string>
+
+    <!--亲情账户-->
+    <string name="str_accountdetail_fill">充值:%1$s</string>
+    <string name="str_accountdetail_pay">消费:%1$s</string>
+
+    <!--我的订单-->
+    <string name="str_order_all">全部</string>
+    <string name="str_order_no_pay">待支付</string>
+    <string name="str_order_no_comment">待评价</string>
+    <string name="str_order_comment">评价</string>
+    <string name="str_order_orderid">订单号：%s</string>
+    <string name="str_item_order_cancel">取消订单</string>
+    <string name="str_item_order_gopay">去支付</string>
+    <string name="str_item_order_pay">实付款：</string>
+    <string name="str_order_confirm">提交订单</string>
+    <string name="str_current_city_name">当前城市-%s</string>
+
+    <string-array name="array_main_tabs">
+        <item>@string/array_main_tabs_home</item>
+        <item>@string/array_main_tabs_use</item>
+        <item>@string/array_main_tabs_ticket</item>
+        <item>@string/array_main_tabs_me</item>
+    </string-array>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_common_gray"
+                android:clipToPadding="false"
+                android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_title"/>
+
+    <com.enrich.pengyouhui.support.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include"
+        android:padding="@dimen/dimen_common_0">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="@dimen/dimen_common_0"
+            android:layout_height="@dimen/dimen_common_0"
+            android:layout_weight="0"
+            android:padding="@dimen/dimen_common_0"
+            android:paddingTop="@dimen/dimen_common_10"/>
+    </com.enrich.pengyouhui.support.FragmentTabHost>
+
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@android:id/tabhost"
+        android:paddingTop="@dimen/dimen_common_5"/>
+
+    <LinearLayout
+        android:id="@+id/id_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_4"
+        android:layout_below="@id/include"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/iv_scroll_line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_base_divider"
+            android:scaleType="matrix"/>
+    </LinearLayout>
+
+</RelativeLayout>

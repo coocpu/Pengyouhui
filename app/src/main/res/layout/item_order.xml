@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_order_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_40"
+        android:layout_marginTop="@dimen/dimen_common_10"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/storeName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/dimen_common_10"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_common_10"
+            android:text="@string/str_order_orderid"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/iv_item_order_del"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_common_10"
+            android:paddingLeft="@dimen/dimen_common_10"
+            android:paddingRight="@dimen/dimen_common_10"
+            android:src="@mipmap/icon_common_del"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_1"
+        android:background="#e8e8e8"/>
+
+    <ListView
+        android:id="@+id/list_goods"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_0"
+        android:clickable="false"
+        android:focusable="false"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_1"
+        android:background="#e8e8e8"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_marginTop="0.5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_common_5"
+            android:paddingLeft="@dimen/dimen_common_15"
+            android:paddingTop="@dimen/dimen_common_5"
+            android:text="@string/str_item_order_pay"
+            android:textColor="#808080"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/textView"
+            android:gravity="center"
+            android:text="￥99.00"
+            android:textColor="#3b3b3b"/>
+
+        <TextView
+            android:id="@+id/delete_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_common_5"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="@dimen/dimen_common_5"
+            android:layout_toLeftOf="@+id/pay_again"
+            android:background="@drawable/bg_shape_order_item"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_common_15"
+            android:paddingRight="@dimen/dimen_common_15"
+            android:text="@string/str_item_order_cancel"
+            android:textColor="@color/color_font_comment_common"
+            android:textSize="@dimen/dimen_common_font_14"/>
+
+        <TextView
+            android:id="@+id/pay_again"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dimen_common_5"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/dimen_common_5"
+            android:background="@drawable/bg_shape_order_item_to_pay"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_common_15"
+            android:paddingRight="@dimen/dimen_common_15"
+            android:text="@string/str_item_order_gopay"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_common_font_14"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_main_bg"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <EditText
+        android:id="@id/id_et_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_marginLeft="@dimen/dimen_common_30"
+        android:layout_marginRight="@dimen/dimen_common_30"
+        android:layout_marginTop="@dimen/dimen_common_40"
+        android:background="@drawable/bg_shape_5_solid_white_alpha_2"
+        android:drawableLeft="@mipmap/icon_et_me"
+        android:drawablePadding="@dimen/dimen_common_10"
+        android:gravity="center_vertical"
+        android:hint="@string/str_login_hint_mobile"
+        android:inputType="phone"
+        android:paddingLeft="@dimen/dimen_common_20"
+        android:textColorHint="@android:color/white"
+        android:textSize="@dimen/dimen_common_font_14"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_marginLeft="@dimen/dimen_common_30"
+        android:layout_marginRight="@dimen/dimen_common_30"
+        android:layout_marginTop="@dimen/dimen_common_10">
+
+        <EditText
+            android:id="@+id/et_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_shape_5_solid_white_alpha_2"
+            android:drawableLeft="@mipmap/icon_verification_code"
+            android:drawablePadding="@dimen/dimen_common_10"
+            android:hint="@string/str_input_verification_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/dimen_common_20"
+            android:paddingRight="@dimen/dimen_common_30"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/dimen_common_font_14"/>
+
+        <TextView
+            android:id="@+id/tv_register_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dimen_common_30"
+            android:layout_toRightOf="@+id/et_verification_code"
+            android:background="@drawable/bg_shape_5_solid_white_alpha_5"
+            android:gravity="center"
+            android:text="@string/str_get_verification_code"
+            android:textColor="@color/color_font_common_1"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_marginLeft="@dimen/dimen_common_30"
+        android:layout_marginRight="@dimen/dimen_common_30"
+        android:layout_marginTop="@dimen/dimen_common_10"
+        android:background="@drawable/bg_shape_5_solid_white_alpha_2"
+        android:drawableLeft="@mipmap/icon_wallet"
+        android:drawablePadding="@dimen/dimen_common_10"
+        android:gravity="center_vertical"
+        android:hint="@string/str_hint_recharge_amount"
+        android:inputType="number"
+        android:paddingLeft="@dimen/dimen_common_20"
+        android:textColorHint="@android:color/white"
+        android:textSize="@dimen/dimen_common_font_14"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_marginLeft="@dimen/dimen_common_30"
+        android:layout_marginRight="@dimen/dimen_common_30"
+        android:layout_marginTop="@dimen/dimen_common_30"
+        android:background="@drawable/bg_shape_20_solid"
+        android:gravity="center"
+        android:text="@string/str_recharge"
+        android:textColor="@color/color_font_login"
+        android:textSize="@dimen/dimen_common_font_16"/>
+
+</LinearLayout>

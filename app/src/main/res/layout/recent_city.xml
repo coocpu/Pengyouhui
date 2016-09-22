@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_common_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/recentHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e9e9e9"
+        android:paddingBottom="@dimen/dimen_common_10"
+        android:paddingLeft="10dip"
+        android:paddingTop="@dimen/dimen_common_10"
+        android:text="最近访问城市"
+        android:textColor="#2e2e2e"
+        android:textSize="16sp"/>
+
+    <com.enrich.pengyouhui.activitys.city.MyGridView
+        android:id="@+id/recent_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:horizontalSpacing="20dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:background="#E2E2E2"/>
+
+</LinearLayout>

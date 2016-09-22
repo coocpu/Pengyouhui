@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ptr="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="false"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_0"
+        android:layout_weight="1"
+        android:background="@mipmap/img_mine_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_common_200">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.enrich.pengyouhui.views.RoundImageView
+                    android:id="@+id/iv_accountdetail_icon"
+                    android:layout_width="@dimen/dimen_common_80"
+                    android:layout_height="@dimen/dimen_common_80"
+                    android:src="@mipmap/icon_default_head_img"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_common_25"
+                    android:background="@color/transparent"
+                    android:text="总金额（元）"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_common_font_12"/>
+
+                <TextView
+                    android:id="@+id/tv_accountdetail_totalaccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_common_8"
+                    android:background="@color/transparent"
+                    android:text="0.0"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dimen_common_font_24"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_mine_line_num">
+
+            <TextView
+                android:id="@+id/tv_to_others_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_common_30"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_common_45"
+                android:layout_toLeftOf="@+id/view"
+                android:layout_toStartOf="@+id/view"
+                android:background="@drawable/bg_shape_5_solid_white_alpha_9"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_common_10"
+                android:paddingRight="@dimen/dimen_common_10"
+                android:text="他人充值"
+                android:textColor="@drawable/bg_selector_others_rechange_font"
+                android:textSize="@dimen/dimen_common_font_14"/>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/dimen_common_1"
+                android:layout_height="@dimen/dimen_common_30"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dimen_common_10"
+                android:layout_marginTop="@dimen/dimen_common_10"
+                android:background="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/tv_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_common_30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_common_45"
+                android:layout_toEndOf="@+id/view"
+                android:layout_toRightOf="@+id/view"
+                android:background="@drawable/bg_shape_5_solid_white_alpha_9"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_common_30"
+                android:paddingRight="@dimen/dimen_common_30"
+                android:text="充值"
+                android:textColor="@drawable/bg_selector_recharge_font"
+                android:textSize="@dimen/dimen_common_font_14"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_0"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_common_15"
+            android:paddingLeft="@dimen/dimen_common_15"
+            android:paddingTop="@dimen/dimen_common_15"
+            android:text="账户明细"
+            android:textColor="#403e3e"
+            android:textSize="@dimen/dimen_common_font_16"/>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="both"/>
+    </LinearLayout>
+</LinearLayout>

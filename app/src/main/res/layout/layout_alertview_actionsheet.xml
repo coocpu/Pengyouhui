@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clipToPadding="false"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/loAlertHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_actionsheet_header"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAlertTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_common_40"
+            android:gravity="center"
+            android:textColor="@color/textColor_actionsheet_title"
+            android:textSize="@dimen/dimen_common_font_14"/>
+
+        <TextView
+            android:id="@+id/tvAlertMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_common_15"
+            android:gravity="center"
+            android:textColor="@color/textColor_actionsheet_msg"
+            android:textSize="@dimen/dimen_common_font_14"/>
+
+        <ListView
+            android:id="@+id/alertButtonListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:listSelector="@drawable/bg_alertbutton_none"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAlertCancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_marginTop="@dimen/dimen_common_15"
+        android:background="@drawable/bg_actionsheet_cancel"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="@color/textColor_alert_button_cancel"
+        android:textSize="@dimen/dimen_common_font_18"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:drawable="@drawable/bg_shape_corners_8_white_alpha_6" android:state_pressed="true"/>-->
+    <!--<item android:drawable="@drawable/bg_shape_corners_8_solid_white_alpha_8" android:state_pressed="false"/>-->
+
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="@dimen/dimen_common_8"/>
+            <solid android:color="@color/color_common_white_alpha_0.6"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape>
+            <corners android:radius="@dimen/dimen_common_8"/>
+            <solid android:color="@color/color_common_white_alpha_0.8"/>
+        </shape>
+    </item>
+</selector>

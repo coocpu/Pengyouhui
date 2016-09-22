@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_common_bg"
+                android:clipToPadding="false"
+                android:fitsSystemWindows="true">
+
+    <include layout="@layout/layout_title"/>
+
+    <RelativeLayout
+        android:id="@+id/id_layout_0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_60"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/id_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/selector_item_cb"
+            android:drawablePadding="@dimen/dimen_common_8"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_common_8"
+            android:text="匿名评价"
+            android:textColor="@color/color_font_comment_common"
+            android:textSize="@dimen/dimen_common_font_14"/>
+
+        <TextView
+            android:id="@+id/tv_comment_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#cfcac9"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_common_25"
+            android:paddingRight="@dimen/dimen_common_25"
+            android:text="发表评价"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_common_font_16"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_common_1px"
+            android:background="@color/color_common_bg"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/id_layout_0"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <com.enrich.pengyouhui.views.XCRoundRectImageView
+                android:id="@+id/id_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_common_120"
+                android:layout_marginLeft="@dimen/dimen_common_20"
+                android:layout_marginRight="@dimen/dimen_common_15"
+                android:layout_marginTop="@dimen/dimen_common_15"/>
+
+            <TextView
+                android:id="@+id/tv_expressinfo_goodsname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_common_20"
+                android:layout_marginRight="@dimen/dimen_common_15"
+                android:layout_marginTop="@dimen/dimen_common_10"
+                android:padding="@dimen/dimen_common_5"
+                android:text="自行车"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/dimen_common_font_16"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_expressinfo_goodsname"
+                android:layout_marginLeft="@dimen/dimen_common_20"
+                android:layout_marginRight="@dimen/dimen_common_15">
+
+                <TextView
+                    android:id="@+id/tv_expressinfo_goodsweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_common_5"
+                    android:padding="@dimen/dimen_common_5"
+                    android:text="规格：盒/5g"
+                    android:textColor="#8f8f8f"
+                    android:textSize="@dimen/dimen_common_font_12"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dimen_common_5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_expressinfo_goodsname"
+                        android:layout_toRightOf="@id/id_imageview"
+                        android:padding="@dimen/dimen_common_5"
+                        android:text="实付款："
+                        android:textColor="#808080"
+                        android:textSize="@dimen/dimen_common_font_14"/>
+
+                    <TextView
+                        android:id="@+id/tv_expressinfo_realpay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_common_5"
+                        android:text="￥99.00"
+                        android:textColor="#d52c2a"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_common_15"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_common_15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_common_20"
+                    android:paddingTop="@dimen/dimen_common_20"
+                    android:text="商品评分"
+                    android:textColor="@color/color_font_comment_common"
+                    android:textSize="@dimen/dimen_common_font_18"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_common_45"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="描述相符"
+                        android:textColor="@color/color_font_comment_common"
+                        android:textSize="@dimen/dimen_common_font_14"/>
+
+                    <RatingBar
+                        android:id="@+id/rb_comment_describe"
+                        style="@style/roomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_common_10"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:stepSize="1"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_common_45"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="服务态度"
+                        android:textColor="@color/color_font_comment_common"
+                        android:textSize="@dimen/dimen_common_font_14"/>
+
+                    <RatingBar
+                        android:id="@+id/rb_comment_product"
+                        style="@style/roomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_common_10"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:stepSize="1"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_common_45"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="服务质量"
+                        android:textColor="@color/color_font_comment_common"
+                        android:textSize="@dimen/dimen_common_font_14"/>
+
+                    <RatingBar
+                        android:id="@+id/rb_comment_express"
+                        style="@style/roomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dimen_common_10"
+                        android:numStars="5"
+                        android:rating="4"
+                        android:stepSize="1"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

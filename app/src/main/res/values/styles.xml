@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="customer_progress_dialog" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateDuration">2000</item>
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+    </style>
+
+    <style name="theme.customer_progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:alertDialogStyle">@style/customer_progress_dialog</item>
+        <item name="android:progressBarStyleSmall">@style/customer_progress_dialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:paddingLeft">@dimen/dimen_common_5</item>
+        //图片与左边距的距离
+        <item name="android:paddingRight">@dimen/dimen_common_5</item>
+        //message与右边距的距离
+        <item name="android:textSize">@dimen/dimen_common_font_16</item>
+        //message字体的大小
+        <item name="android:textColor">@android:color/white</item>
+        //message字体的颜色
+    </style>
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/layerlist_common_ratingbar</item>
+        <item name="android:minHeight">17dp</item>
+        <item name="android:maxHeight">17dp</item>
+    </style>
+
+    <style name="style_common_width_height_mw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_common_tab_coupon" parent="style_common_width_height_mw">
+        <item name="android:paddingLeft">@dimen/dimen_common_0</item>
+        <item name="android:paddingRight">@dimen/dimen_common_0</item>
+        <item name="android:paddingTop">@dimen/dimen_common_10</item>
+        <item name="android:paddingBottom">@dimen/dimen_common_10</item>
+        <item name="android:textSize">@dimen/dimen_common_font_16</item>
+        <item name="android:textColor">@drawable/selector_color_tab_black2pyh</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_0"
+        android:layout_weight="1"
+        android:background="@mipmap/img_mine_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_common_0"
+            android:layout_weight="3">
+
+            <com.enrich.pengyouhui.views.CircleImageView
+                android:id="@+id/civ_head"
+                android:layout_width="@dimen/dimen_common_70"
+                android:layout_height="@dimen/dimen_common_70"
+                android:layout_above="@+id/rl_no_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_common_20"
+                android:src="@mipmap/icon_default_head_img"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_no_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_common_40"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_common_40">
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/View"
+                    android:background="@drawable/bg_selector_login"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_common_24"
+                    android:paddingRight="@dimen/dimen_common_24"
+                    android:text="@string/str_login"
+                    android:textColor="@drawable/bg_selector_login_font"/>
+
+                <View
+                    android:id="@+id/View"
+                    android:layout_width="@dimen/dimen_common_20"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/View"
+                    android:background="@drawable/bg_selector_login"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_common_24"
+                    android:paddingRight="@dimen/dimen_common_24"
+                    android:text="@string/str_register"
+                    android:textColor="@drawable/bg_selector_register_font"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_has_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_common_40"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_common_40"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="心若沉浮"
+                    android:textColor="@android:color/white"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_common_60"
+            android:background="@color/color_mine_line_num"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/line_no_payment"
+                android:layout_width="@dimen/dimen_common_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_common_0"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="@string/str_mine_no_payment"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_no_payment_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_common_0"
+                    android:layout_weight="1"
+                    android:gravity="top|center_horizontal"
+                    android:text="（0）"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dimen_common_1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_common_5"
+                android:layout_marginTop="@dimen/dimen_common_5"
+                android:background="@android:color/white"/>
+
+            <LinearLayout
+                android:id="@+id/line_coupon"
+                android:layout_width="@dimen/dimen_common_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_common_0"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="@string/str_mine_coupon"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_coupon_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_common_0"
+                    android:layout_weight="1"
+                    android:gravity="top|center_horizontal"
+                    android:text="（0）"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dimen_common_1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_common_5"
+                android:layout_marginTop="@dimen/dimen_common_5"
+                android:background="@android:color/white"/>
+
+            <LinearLayout
+                android:id="@+id/line_collect"
+                android:layout_width="@dimen/dimen_common_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_common_0"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="@string/str_common_collect"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_collect_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_common_0"
+                    android:layout_weight="1"
+                    android:gravity="top|center_horizontal"
+                    android:text="（0）"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_0"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_common_0"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_myorder"
+                android:layout_width="@dimen/dimen_common_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dimen_common_10"
+                android:drawableTop="@mipmap/icon_myorder"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/dimen_common_20"
+                android:text="@string/str_mine_myorder"/>
+
+            <View
+                android:layout_width="@dimen/dimen_common_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_common_20"
+                android:background="@color/color_common_divider"/>
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="@dimen/dimen_common_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dimen_common_10"
+                android:drawableTop="@mipmap/icon_account"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/dimen_common_20"
+                android:text="@string/str_mine_account"/>
+
+            <View
+                android:layout_width="@dimen/dimen_common_1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_common_20"
+                android:background="@color/color_common_divider"/>
+
+            <TextView
+                android:id="@+id/tv_coupon"
+                android:layout_width="@dimen/dimen_common_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dimen_common_10"
+                android:drawableTop="@mipmap/icon_coupon"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/dimen_common_20"
+                android:text="@string/str_mine_coupon_1"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_common_1"
+            android:layout_marginLeft="@dimen/dimen_common_20"
+            android:layout_marginRight="@dimen/dimen_common_20"
+            android:background="@color/color_common_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_common_0"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_invoice"
+                android:layout_width="@dimen/dimen_common_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dimen_common_10"
+                android:drawableTop="@mipmap/icon_invoice"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/dimen_common_20"
+                android:text="@string/str_mine_invoice"/>
+
+            <View
+                android:layout_width="@dimen/dimen_common_1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_common_20"
+                android:background="@color/color_common_divider"/>
+
+            <TextView
+                android:id="@+id/tv_collect"
+                android:layout_width="@dimen/dimen_common_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dimen_common_10"
+                android:drawableTop="@mipmap/icon_collect"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/dimen_common_20"
+                android:text="@string/str_mine_collect"/>
+
+            <View
+                android:layout_width="@dimen/dimen_common_1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dimen_common_20"
+                android:background="@color/color_common_divider"/>
+
+            <TextView
+                android:id="@+id/tv_setting"
+                android:layout_width="@dimen/dimen_common_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dimen_common_10"
+                android:drawableTop="@mipmap/icon_setting"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/dimen_common_20"
+                android:text="@string/str_mine_setting"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

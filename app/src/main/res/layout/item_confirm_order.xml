@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_common_240"
+    android:orientation="vertical">
+
+    <com.enrich.pengyouhui.views.XCRoundRectImageView
+        android:id="@+id/id_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_120"
+        android:layout_marginLeft="@dimen/dimen_common_20"
+        android:layout_marginRight="@dimen/dimen_common_15"
+        android:layout_marginTop="@dimen/dimen_common_15"/>
+
+    <TextView
+        android:id="@+id/tv_expressinfo_goodsname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_common_20"
+        android:layout_marginRight="@dimen/dimen_common_15"
+        android:layout_marginTop="@dimen/dimen_common_10"
+        android:padding="@dimen/dimen_common_5"
+        android:text="豪华版变速自行车"
+        android:textColor="#323232"
+        android:textSize="@dimen/dimen_common_font_16"/>
+
+    <TextView
+        android:id="@+id/tv_expressinfo_goodsweight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_common_20"
+        android:layout_marginRight="@dimen/dimen_common_15"
+        android:layout_marginTop="@dimen/dimen_common_5"
+        android:padding="@dimen/dimen_common_5"
+        android:text="￥1280.00- ￥10.00优惠金额"
+        android:textColor="@color/color_font_comment_common"
+        android:textSize="@dimen/dimen_common_font_12"/>
+
+    <TextView
+        android:id="@+id/tv_confirm_order_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_common_20"
+        android:layout_marginRight="@dimen/dimen_common_15"
+        android:layout_marginTop="@dimen/dimen_common_5"
+        android:padding="@dimen/dimen_common_5"
+        android:text="￥1270.00"
+        android:textColor="#f75b5c"
+        android:textSize="@dimen/dimen_common_font_16"/>
+
+</LinearLayout>

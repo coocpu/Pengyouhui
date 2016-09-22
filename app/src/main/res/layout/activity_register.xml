@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/img_main_bg"
+              android:clipToPadding="false"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_title"/>
+
+    <EditText
+        android:id="@+id/et_user_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_marginLeft="@dimen/dimen_common_20"
+        android:layout_marginRight="@dimen/dimen_common_20"
+        android:layout_marginTop="@dimen/dimen_common_60"
+        android:background="@drawable/bg_shape_5_solid_white_alpha_2"
+        android:drawableLeft="@mipmap/icon_et_me"
+        android:drawablePadding="@dimen/dimen_common_10"
+        android:gravity="center_vertical"
+        android:hint="@string/str_login_hint_mobile"
+        android:inputType="phone"
+        android:paddingLeft="@dimen/dimen_common_20"
+        android:textColorHint="@android:color/white"
+        android:textSize="@dimen/dimen_common_font_14"/>
+
+    <LinearLayout
+        android:id="@+id/id_layout_0"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_register_imgcode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="5"
+            android:background="@drawable/login_shape"
+            android:gravity="center|left"
+            android:hint="@string/str_register_imgcode_null"
+            android:inputType="text"
+
+            android:singleLine="true"
+            android:textColor="#A8000000"
+            android:textColorHint="#dbdbdb"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_register_imgcode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_common_5"
+            android:layout_weight="3"
+            android:paddingBottom="@dimen/dimen_common_5"
+            android:paddingTop="@dimen/dimen_common_5"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_marginLeft="@dimen/dimen_common_20"
+        android:layout_marginRight="@dimen/dimen_common_20"
+        android:layout_marginTop="@dimen/dimen_common_10">
+
+        <EditText
+            android:id="@+id/et_verification_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_shape_5_solid_white_alpha_2"
+            android:drawableLeft="@mipmap/icon_verification_code"
+            android:drawablePadding="@dimen/dimen_common_10"
+            android:hint="@string/str_input_verification_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingLeft="@dimen/dimen_common_20"
+            android:paddingRight="@dimen/dimen_common_30"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/dimen_common_font_14"/>
+
+        <TextView
+            android:id="@+id/tv_register_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dimen_common_30"
+            android:layout_toRightOf="@+id/et_verification_code"
+            android:background="@drawable/bg_shape_5_solid_white_alpha_5"
+            android:gravity="center"
+            android:text="@string/str_get_verification_code"
+            android:textColor="@color/color_font_common_1"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_input_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_marginLeft="@dimen/dimen_common_20"
+        android:layout_marginRight="@dimen/dimen_common_20"
+        android:layout_marginTop="@dimen/dimen_common_10"
+        android:background="@drawable/bg_shape_5_solid_white_alpha_2"
+        android:drawableLeft="@mipmap/icon_et_pwd"
+        android:drawablePadding="@dimen/dimen_common_10"
+        android:gravity="center_vertical"
+        android:hint="@string/str_login_hint_pwd"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/dimen_common_20"
+        android:textColorHint="@android:color/white"
+        android:textSize="@dimen/dimen_common_font_14"/>
+
+    <EditText
+        android:id="@+id/et_input_repwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_marginLeft="@dimen/dimen_common_20"
+        android:layout_marginRight="@dimen/dimen_common_20"
+        android:layout_marginTop="@dimen/dimen_common_10"
+        android:background="@drawable/bg_shape_5_solid_white_alpha_2"
+        android:drawableLeft="@mipmap/icon_et_pwd"
+        android:drawablePadding="@dimen/dimen_common_10"
+        android:gravity="center_vertical"
+        android:hint="@string/str_register_repwd"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/dimen_common_20"
+        android:textColorHint="@android:color/white"
+        android:textSize="@dimen/dimen_common_font_14"/>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_50"
+        android:layout_marginLeft="@dimen/dimen_common_20"
+        android:layout_marginRight="@dimen/dimen_common_20"
+        android:layout_marginTop="@dimen/dimen_common_40"
+        android:background="@drawable/bg_shape_20_solid"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_common_10"
+        android:paddingTop="@dimen/dimen_common_10"
+        android:text="@string/str_register"
+        android:textColor="@color/color_font_login"
+        android:textSize="@dimen/dimen_common_font_16"/>
+
+</LinearLayout>

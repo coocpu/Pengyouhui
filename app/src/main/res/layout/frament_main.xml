@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/img_main_bg"
+              android:orientation="vertical">
+
+    <!--<include layout="@layout/layout_title"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_40"
+        android:layout_marginLeft="@dimen/dimen_common_10"
+        android:layout_marginRight="@dimen/dimen_common_10"
+        android:layout_marginTop="@dimen/dimen_common_30"
+        android:background="@drawable/bg_shape_5_solid_white_alpha_4">
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/icon_location"
+            android:drawablePadding="@dimen/dimen_common_5"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_common_14"
+            android:paddingRight="@dimen/dimen_common_5"
+            android:text="上海"
+            android:textColor="@android:color/white"/>
+
+        <View
+            android:layout_width="@dimen/dimen_common_1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_common_5"
+            android:layout_toRightOf="@+id/tv_location"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_common_5"
+            android:paddingRight="@dimen/dimen_common_5"
+            android:text="天气"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/iv_home_scan"
+            android:layout_width="@dimen/dimen_common_40"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/dimen_common_5"
+            android:paddingRight="@dimen/dimen_common_20"
+            android:scaleType="center"
+            android:src="@mipmap/icon_scan"/>
+
+    </RelativeLayout>
+
+
+    <com.enrich.pengyouhui.views.PullableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_400"
+        android:layout_marginTop="@dimen/dimen_common_10"
+        android:scrollbarSize="@dimen/dimen_common_12"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+        android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+        android:scrollbars="none">
+
+        <com.enrich.pengyouhui.views.GridViewForScrollView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="@dimen/dimen_common_2"
+            android:numColumns="2"
+            android:paddingLeft="@dimen/dimen_common_5"
+            android:paddingRight="@dimen/dimen_common_5"
+            android:verticalSpacing="@dimen/dimen_common_2"/>
+    </com.enrich.pengyouhui.views.PullableScrollView>
+
+    <com.enrich.pengyouhui.views.XCRoundRectImageView
+        android:id="@+id/iv_adv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_0"
+        android:layout_marginBottom="@dimen/dimen_common_5"
+        android:layout_marginLeft="@dimen/dimen_common_10"
+        android:layout_marginRight="@dimen/dimen_common_10"
+        android:layout_marginTop="@dimen/dimen_common_10"
+        android:layout_weight="1"
+        android:src="@null"/>
+
+</LinearLayout>

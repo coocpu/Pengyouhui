@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:grid="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- 顶部广告部分 -->
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_common_240"
+        android:background="#F5F4F3">
+
+        <com.enrich.pengyouhui.views.sliderlayout.SliderLayout
+            android:id="@+id/sl_product_slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            grid:auto_cycle="true"
+            grid:indicator_visibility="visible"
+            grid:pager_animation="Accordion"
+            grid:pager_animation_span="1100"/>
+
+        <com.enrich.pengyouhui.views.sliderlayout.PagerIndicator
+            android:id="@+id/pr_product_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="right"
+            grid:selected_color="#405555"
+            grid:selected_height="8dp"
+            grid:selected_padding_left="3dp"
+            grid:selected_padding_right="3dp"
+            grid:selected_width="8dp"
+            grid:shape="oval"
+            grid:unselected_color="#40555555"
+            grid:unselected_height="4dp"
+            grid:unselected_padding_left="3dp"
+            grid:unselected_padding_right="3dp"
+            grid:unselected_width="4dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
